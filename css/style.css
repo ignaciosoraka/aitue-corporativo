@@ -809,7 +809,8 @@ Features
     animation: scroll 40s linear infinite;
     -webkit-animation: scroll 40s linear infinite;
     width: calc(200px * 14);
-    margin: 0 auto;
+    margin: 0 auto ;
+    margin-bottom: 100px;
 }
 
 .slider .slide{
@@ -820,15 +821,12 @@ Features
 .marcas{
     text-align: center;
     font-size: 35px;
-    padding: 60px 0;
+    padding: 100px 0;
     color: white;
 }
 
 
-.slider .slide img{
-    width: 100%;
-    
-}
+
 
 @keyframes scroll {
     0%{
