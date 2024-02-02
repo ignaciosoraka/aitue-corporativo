@@ -28,7 +28,7 @@ body {
 body::before {
     content: "";
     background: #000000;
-    background-image: url('../images/Landing_Web_aitue_trama\ \(1\).png');
+    background-image: url('../images/Landing_Web_aitue-2_trama.png');
     background-size: cover;
     position: fixed;
     top: 0;
@@ -340,13 +340,13 @@ nav.nav .nav__logo {
     top: 0;
     left: 0;
     width: 100%;
-    height: 400px;
+    height: 800px;
     background-image: linear-gradient(180deg,
             rgba(7, 7, 7, 0) 0%,
             /* Color azul más oscuro */
-            rgb(3, 41, 90) 100%
+            rgb(17, 17, 17) 100%
             /* Color azul transparente */
-        ), url('../images/mapachico\ \(4\).jpg');
+        ), url('../images/educacion2.jpg');
     background-size: cover;
     /* Ajusta el tamaño de la imagen para cubrir completamente el contenedor */
     background-position: center center;
@@ -354,6 +354,11 @@ nav.nav .nav__logo {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 
 
+}
+
+.texto{
+    font-size: 24px;
+    max-width: 700px;
 }
 
 .botones {
@@ -679,32 +684,44 @@ Features
   }
   
   .first-feature .icon {
-    background-image: url(../images/panel-de-administrador.png);
-  }
+    background-image: url(../images/wetransfer_iconos_63x63_carrera-profesional-png_2024-02-02_1924/Iconos_63x63_panel-de-administrador-2.png);
+
+    background-size: cover; /* o "contain" según tus necesidades */
+}
+
+ 
   
   .second-feature .icon {
-    background-image: url(../images/features-icon-black-02.png);
+    background-image: url(../images/wetransfer_iconos_63x63_carrera-profesional-png_2024-02-02_1924/Iconos_63x63_tarjeta-clave-2.png);
+    background-size: cover;
   }
   .tres-feature .icon {
-    background-image: url(../images/features-icon-black-02.png);
+    background-image: url(../images/wetransfer_iconos_63x63_carrera-profesional-png_2024-02-02_1924/Iconos_63x63_carrera-profesional-2.png);
+    background-size: cover;
   }
   .cuatro-feature .icon {
-    background-image: url(../images/features-icon-black-02.png);
+    background-image: url(../images/wetransfer_iconos_63x63_carrera-profesional-png_2024-02-02_1924/Iconos_63x63_conectando-2.png);
+    background-size: cover;
   }
 
   .first-feature:hover .icon {
-    background-image: url(../images/features-icon-white-01.png);
-  }
+    background-image: url(../images/wetransfer_iconos_63x63_carrera-profesional-png_2024-02-02_1924/Iconos_63x63_Mesa\ de\ trabajo\ 1\ copia\ 4.png);
+    background-size: cover; /* o "contain" según tus necesidades */
+}
+  
   
   .second-feature:hover .icon {
-    background-image: url(../images/features-icon-white-02.png);
+    background-image: url(../images/wetransfer_iconos_63x63_carrera-profesional-png_2024-02-02_1924/Iconos_63x63_tarjeta-clave.png);
+    background-size: cover;
   }
   .tres-feature:hover .icon {
-    background-image: url(../images/features-icon-white-01.png);
+    background-image: url(../images/wetransfer_iconos_63x63_carrera-profesional-png_2024-02-02_1924/Iconos_63x63_carrera-profesional.png);
+    background-size: cover;
   }
   
   .cuatro-feature:hover .icon {
-    background-image: url(../images/features-icon-white-02.png);
+    background-image: url(../images/wetransfer_iconos_63x63_carrera-profesional-png_2024-02-02_1924/Iconos_63x63_conectando.png);
+    background-size: cover;
   }
   
   .features-item .icon {
