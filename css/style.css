@@ -280,7 +280,7 @@ nav.nav .nav__logo {
 
 .about {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 100px;
     margin-bottom: 100px;
 }
 
@@ -475,7 +475,9 @@ nav.nav .nav__logo {
     font-size: 28px;
    display: none;
 
-    color: #232323;
+    color: white;
+    padding-bottom: 50px;
+    margin
 
 }
 
@@ -518,7 +520,8 @@ a.main-button:hover {
 
     .custom-content {
         flex: 1;
-        padding: 0px 20px 20px 20px;
+        padding: 0px 20px 60px 20px;
+        text-align: center;
         
     }
 
@@ -1584,7 +1587,7 @@ footer {
     }
 
     .about__title {
-        color: rgb(0, 63, 118);
+      
         font-size: 18px;
     }
 
@@ -1609,7 +1612,7 @@ footer {
 
     .about__paragraph {
         line-height: 1.7;
-        color: rgb(0, 63, 118);
+       
         font-size: 17px;
         padding: 20px 30px 0px 30px;
     }
