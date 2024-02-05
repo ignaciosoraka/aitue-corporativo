@@ -28,7 +28,7 @@ body {
 body::before {
     content: "";
     background: #000000;
-    background-image: url('../images/Landing_Web_aitue-2_trama.png');
+    background-image: url('../images/trama1.png');
     background-size: cover;
     position: fixed;
     top: 0;
@@ -140,6 +140,9 @@ body::before {
 }
 
 
+
+
+
 .hero {
     width: 100%;
     height: 100vh;
@@ -152,7 +155,10 @@ body::before {
     overflow: hidden;
 }
 
-.hero::before {
+
+
+.slides{
+    
     content: "";
     position: absolute;
     height: 100vh;
@@ -160,19 +166,74 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(360deg,
-                rgba(34, 34, 35, 0.023) 0%,
-                /* Color azul más oscuro */
-                rgba(8, 8, 8, 0.667) 0%
-                /* Color azul transparente */
-            ), url('../images/img_aitue_20_web.jpg');
+    
     background-size: cover;
     background-position: center; /* Centra horizontalmente */
     transform: translateY(-50%); /* Corrige la posición verticalmente centrada */
+
+
+}
+
+.slide{
+    position: absolute;
+    height: 100%;
+    opacity: 0;
+    inset: 0;
+    animation: slide-show 12s infinite;
     z-index: -1;
+    overflow: hidden;
+}
+
+.slide::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Color y opacidad del fondo, ajusta según tus preferencias */
+    z-index: 1; /* Asegura que esté delante de la imagen */
 }
 
 
+.slide-2{
+    animation-delay: 4s;
+}
+
+.slide-3{
+    animation-delay: 8s;
+}
+
+.slide img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: 0;
+     }
+
+
+@keyframes slide-show{
+    0%{
+        opacity: 0;
+        
+    }
+    10%{
+        opacity: 1.9;
+        
+    }
+    20%,
+    30%{
+        opacity: 1;
+        scale: 1.08;
+        
+    }
+    70%{
+        opacity: 0;
+        
+        
+    }
+}
 
 
 
@@ -258,6 +319,7 @@ nav.nav .nav__logo {
     grid-auto-rows: max-content;
     align-content: center;
     margin-left: 100px;
+    padding-top: 150px;
     padding-bottom: 150px;
     text-align: initial;
 }
@@ -340,13 +402,13 @@ nav.nav .nav__logo {
     top: 0;
     left: 0;
     width: 100%;
-    height: 800px;
+    height: 600px;
     background-image: linear-gradient(180deg,
             rgba(7, 7, 7, 0) 0%,
             /* Color azul más oscuro */
             rgb(17, 17, 17) 100%
             /* Color azul transparente */
-        ), url('../images/educacion2.jpg');
+        ), url('../images/antena/IMG_2119.JPG');
     background-size: cover;
     /* Ajusta el tamaño de la imagen para cubrir completamente el contenedor */
     background-position: center center;
@@ -358,7 +420,7 @@ nav.nav .nav__logo {
 
 .texto{
     font-size: 24px;
-    max-width: 700px;
+    max-width: 600px;
 }
 
 .botones {
@@ -428,7 +490,7 @@ nav.nav .nav__logo {
     transform: translate(0, -50%);
     color: #fff;
     font-size: 40px;
-    font-weight: bold;
+    
     /* Grosor del texto */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     /* Sombra del texto */
@@ -795,7 +857,7 @@ Features
 /*comentarios2.0*/
 
 /* empresas*/
-.slider{
+.slider2{
    
     padding-top: 10px;
     width: 75vw;
@@ -804,7 +866,7 @@ Features
     overflow: hidden;
 }
 
-.slider .slide-track{
+.slider2 .slide2-track{
     display: flex;
     animation: scroll 40s linear infinite;
     -webkit-animation: scroll 40s linear infinite;
@@ -813,7 +875,7 @@ Features
     margin-bottom: 100px;
 }
 
-.slider .slide{
+.slider2 .slide2{
     width: 200px;
     margin: 0 25px; /* Espacio entre las marcas */
 }
@@ -835,8 +897,8 @@ Features
     }
 
     100%{
-        -webkit-animation: translateX(calc(-200px * 7));
-        transform:  translateX(calc(-200px * 7));
+        -webkit-animation: translateX(calc(-200px * 10));
+        transform:  translateX(calc(-200px * 10));
     }
 }
 /* Ajuste para dispositivos móviles */
@@ -1250,8 +1312,8 @@ footer {
     bottom: 0;
     left: 0;
     right: 0;
-    background: #111;
-    background-image: url('../images/Landing_Web_aitue_trama\ \(1\).png');
+    
+    background-image: url('../images/tra');
     height: auto;
     width: 100%;
 
@@ -1561,25 +1623,7 @@ footer {
 
     }
 
-    .hero::before {
-        content: "";
-        position: absolute;
-        height: 100vh;
-        top: 50%; /* Centra verticalmente */
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-image: linear-gradient(360deg,
-                    rgba(34, 34, 35, 0.023) 0%,
-                    /* Color azul más oscuro */
-                    rgba(8, 8, 8, 0.667) 0%
-                    /* Color azul transparente */
-                ), url('../images/Mining-dump-trucks-transporting-Platinum-ore-for-processing.jpg');
-        background-size: cover;
-        background-position: center; /* Centra horizontalmente */
-        transform: translateY(-50%); /* Corrige la posición verticalmente centrada */
-        z-index: -1;
-    }
+   
 
 
 
