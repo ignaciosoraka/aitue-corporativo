@@ -1698,11 +1698,11 @@ footer {
         position: absolute;
         top: 45%;
         text-align: center;
-        padding-right: 15px;
+        padding-right: 45px;
         transform: translate(0, -50%);
         color: #fff;
-        font-size: 30px;
-        font-weight: bold;
+        font-size: 25px;
+        
         /* Grosor del texto */
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         /* Sombra del texto */
