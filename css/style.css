@@ -1008,7 +1008,7 @@ Features
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgba(0, 26, 73, 0.8);
+    background-color: #2252ab;
     /* Color azul oscuro con 70% de transparencia */
     color: white;
 
@@ -1053,7 +1053,7 @@ Features
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(rgba(0 0 0 / .8), rgba(0 0 0 / .8)), url(img/bg.jpg);
+    background:linear-gradient(135deg, rgb(0, 11, 46) 0%, rgba(40, 78, 148, 0.76) 100%), url(img/bg.jpg);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -1110,7 +1110,7 @@ Features
     text-decoration: none;
     width: 40px;
     height: 40px;
-    background: #001A49;
+    background: #2252ab;
     text-align: center;
     transition: .1s;
     border-radius: 5px;
@@ -1198,7 +1198,7 @@ form>button {
     width: 100%;
     padding: 10px;
     outline: none;
-    background: #001A49;
+    background: #2252ab;
     color: #fffcfc;
     border: none;
     transition: .1s;
