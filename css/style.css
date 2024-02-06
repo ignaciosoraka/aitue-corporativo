@@ -24,26 +24,27 @@ body {
     font-family: Sansation_Regular;
     margin: 0;
    
+    
 }
-body::before {
-    content: "";
-    background: #000000;
-    background-image: url('../images/trama1.png');
-    background-size: cover;
+   
+
+
+
+
+
+#particles-js {
     position: fixed;
     top: 0;
     left: 0;
-    right: 0;
-    bottom: 0;
-    
-    /* Ajusta el valor para controlar la cantidad de desenfoque */
-    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-color: #020202;
+    background-image: url('');
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    z-index: -1; /* Un índice z menor que el cuerpo para que quede por debajo */
 }
-
-
-
-
-
 
 
 /* Estilos del botón de WhatsApp */
@@ -64,7 +65,7 @@ body::before {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    z-index: 1000;
+    z-index: 1;
     animation: float 1s infinite;
     /* Aplica la animación constantemente */
 }
