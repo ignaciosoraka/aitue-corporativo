@@ -61,27 +61,62 @@ body {
     }
 }
 
+
+/*---------------------------------------
+    flotante whatapp             
+-----------------------------------------*/
 .whatsapp-button {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    z-index: 1;
-    animation: float 1s infinite;
-    /* Aplica la animación constantemente */
-}
+    background-color: #25d366;
+    /* Color verde de WhatsApp */
+    color: #ffffff;
+    /* Color del texto */
+    border-radius: 50px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.897);
+    z-index: 1000;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .whatsapp-button:hover {
+    background-color: #128C7E;
+    color: #fff;
+    /* Color más oscuro para el efecto hover */
+  }
+  
+  .whatsapp-text {
+    flex: 1;
+    margin-right: 10px;
+  }
+  
+  .whatsapp-logo img {
+    width: 50px;
+    /* Ajusta el tamaño del logo según sea necesario */
+    height: auto;
+  
+  }
 
-.whatsapp-button a {
-    display: block;
-    padding: 15px;
-    text-align: center;
-}
+  @media (max-width: 767px){
 
-.whatsapp-button img {
-    width: 55px;
-    /* Tamaño del icono de WhatsApp */
-    height: 55px;
+    .whatsapp-button {
+        padding: 5px 10px;
+    }
 
-}
+    .whatsapp-logo img {
+        width: 30px;
+    /* Ajusta el tamaño del logo según sea necesario */
+    height: auto;
+    }
+  }
+
+ /*---------------------------------------
+   boton de header           
+-----------------------------------------*/
 
 .whatsapp {
     display: inline-block;
@@ -100,6 +135,7 @@ body {
 
 .whatsapp:hover {
     background-color: #1f8944cf;
+    color: #FFFFFF;
     /* Cambia el color de fondo al pasar el mouse */
 }
 
@@ -125,20 +161,7 @@ body {
 
 
 
-.whatsapp-btn a {
-    display: block;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-}
 
-.whatsapp-button img {
-    width: 85px;
-    /* Tamaño del icono de WhatsApp */
-    height: 85px;
-
-
-}
 
 
 
@@ -203,6 +226,9 @@ body {
 
 .slide-3{
     animation-delay: 8s;
+}
+.slide-4{
+    animation-delay: 12s;
 }
 
 .slide img{
@@ -320,7 +346,7 @@ nav.nav .nav__logo {
     grid-auto-rows: max-content;
     align-content: center;
     margin-left: 100px;
-    padding-top: 150px;
+    padding-top: 100px;
     padding-bottom: 150px;
     text-align: initial;
 }
@@ -1061,6 +1087,17 @@ Features
    
 }
 
+.formulario2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #075e2b 0%, #128c7ebf 100%), url(img/bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+   
+}
+
 .content {
     display: grid;
     grid-template-columns: repeat(2, 50%);
@@ -1128,7 +1165,24 @@ form {
     flex-direction: column;
     text-align: center;
     gap: 15px;
+    
 
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+    margin-top: 100px;
+
+}
+
+@media (max-width:786px){
+
+    .form{
+        margin-top: 0px;
+    }
 }
 
 .input-box {
@@ -1395,7 +1449,62 @@ footer {
 }
 
 
+/*---------------------------------------
+   Formulario de wsp             
+-----------------------------------------*/
+.custom-form-body {
+    background-color: ;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  
+  /* Estilos del formulario específico */
+  .custom-form {
+    max-width: 600px; /* Ajusta el ancho máximo del formulario */
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    margin-top: 50px; /* Ajusta la separación desde la parte superior según tus preferencias */
+    background-color: #fff;
+    border-radius: 10px; /* Ajusta el radio de borde según tus preferencias para tener bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  @media screen and (max-width: 1500px) {
+    .custom-form {
+      margin-top: 150px; /* Ajusta la separación desde la parte superior para pantallas más pequeñas */
+    }
+    .custom-form h1{
+      font-size: 24px;
+    }
+  }
+  
+  .custom-form h1 {
+    text-align: center;
+    color: #000000; /* Cambia el color del texto según tus preferencias */
+    margin-bottom: 20px; /* Ajusta el espacio entre el título y el formulario */
+  }
+  
+  
+  
+  /* Estilos de la barra de navegación */
+  .navbar {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+  }
+  .submit{
+    background-color:#03b538;
+  }
 
+  .submit:hover{
+    background-color:#0a6d28;
+  }
+  
 
 /*
 .footer {
@@ -1825,14 +1934,6 @@ footer {
     }
 
 
-
-    .whatsapp-button img {
-        width: 65px;
-        /* Tamaño del icono de WhatsApp */
-        height: 65px;
-
-
-    }
 
 }
 

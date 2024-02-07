@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<title>Aitue - Contacto </title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="shortcut icon" href="./images/fondotransparente.png" type="image/x-icon">
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/owl.theme.css">
+	<link rel="stylesheet" href="css/owl.carousel.css">
+
+	<!-- Main css -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Font Awesome-->
+	<script src="https://kit.fontawesome.com/996b34cf47.js" crossorigin="anonymous"></script>
+
+	<style>
+		html {
+			scroll-behavior: smooth;
+		}
+
+		/* Otros estilos aquí */
+	</style>
+
+	<!-- Google Font -->
+	<link href='https://fonts.googleapis.com/css?family=Poppins:400,500,600' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+	<div id="particles-js"></div>
+
+	<!-- =========================
+     NAVIGATION LINKS     
+============================== -->
+	<div class="navbar navbar-fixed-top custom-navbar" role="navigation" style="background: rgba(0, 0, 0, 0.5)">
+		<div class="container">
+
+
+
+			<nav class="nav container">
+				<a href="index.html" class="logo-link">
+					<div class="nav__logo">
+						<img class="logo" src="./images//Logo AITUE (3) (1).png" alt="Logo">
+					</div>
+				</a>
+
+				<ul class="nav__link nav__link--menu">
+					<li class="nav__items">
+						<a href="#" class="nav__links">Inicio</a>
+					</li>
+					<li class="nav__items">
+						<a href="#soluciones" class="nav__links">Acerca de</a>
+					</li>
+					<li class="nav__items">
+						<a href="#comentarios" class="nav__links">Comentarios Clientes</a>
+					</li>
+					<li class="nav__items">
+						<a href="#beneficios" class="nav__links">Beneficios</a>
+					</li>
+
+					<li class="nav__items">
+						<a href="#formulario" class="nav__links">Contacto</a>
+					</li>
+
+					<img src="./images/close.svg" class="nav__close">
+				</ul>
+
+				<div class="nav__menu">
+					<img src="./images/menu.svg" class="nav__img">
+				</div>
+			</nav>
+
+		</div>
+	</div>
+	<div class="main-container">
+		<section id="formulario" class="formulario2">
+			<div class="content">
+				<div class="box-info">
+					<h1>Llena tus datos y en la breveda estamos en contacto</h1>
+					<div class="data">
+						<p style="color: white;"><i class="fa-solid fa-phone"></i> <span
+								style="color: white; text-decoration: none;">+54 9 11 4164-0955</span></p>
+
+						<p><i class="fa-solid fa-envelope"></i> Susana@aitue.net</p>
+						<p><i class="fa-solid fa-location-dot"></i> Av. Cerviño 3244, C1425 CABA, Buenos Aires,
+							Argentina
+						</p>
+					</div>
+					<div class="links">
+						<a href="https://www.facebook.com/aitue.net" target="_blank"><i
+								class="fa-brands fa-facebook-f"></i></a>
+						<a href="https://www.instagram.com/aituecomunica/" target="_blank"><i
+								class="fa-brands fa-instagram"></i></a>
+
+						<a
+							href="https://www.linkedin.com/company/aitue/?lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3BBlgDSkG7SFqn1Zf1oLqvPg%3D%3D"><i
+								class="fa-brands fa-linkedin" target="_blank"></i></a>
+					</div>
+				</div>
+				<form class="form" action="formulario.php" method="POST" onsubmit="sendFormDataAndRedirect(event)">
+					<div class="input-box">
+						<input type="text" name="nombre" placeholder="Nombre y apellido" required>
+						<i class="fa-solid fa-user"></i>
+					</div>
+					<div class="input-box">
+						<input type="email" name="email" required placeholder="Correo electrónico">
+						<i class="fa-solid fa-envelope"></i>
+					</div>
+					<div class="input-box">
+						<input type="tel" name="telefono" placeholder="Número de teléfono">
+						<i class="fa-solid fa-phone"></i>
+					</div>
+					
+					<button type="submit" class="submit">Comunicate con nosotros</button>
+				</form>
+				
+				<script>
+					function sendFormDataAndRedirect(event) {
+						// Evitar que el formulario se envíe de forma predeterminada
+						event.preventDefault();
+				
+						// Obtener el formulario
+						var form = event.target;
+				
+						// Enviar los datos del formulario mediante una petición AJAX o similar
+						// En este caso, simplemente dejaremos que el formulario se envíe de forma normal
+						form.submit();
+				
+						// Redirigir al usuario a WhatsApp
+						window.location.href = 'https://wa.me/5491141640955?text=Quiero%20información%20por%20internet%20Satelital';
+					}
+				</script>
+				
+				
+			</div>
+		</section>
+	</div>
+
+	<footer>
+		<div class="footer-content">
+			<div class="logo"><img src="images/Logo AITUE (3) (1).png" class="loguito" alt="Tu Logo" loading="lazy">
+			</div>
+			<p>Direccion: Av. Cerviño 3244, C1425 CABA, Buenos Aires, Argentina</p>
+			
+			<p style="color: white;">WhatsApp: <span style="color: white; text-decoration: none;">+54 9 11 4164-0955</span>
+			</p>
+			<p>Correo: Susana@aitue.net</p>
+
+			<ul class="socials">
+				<li><a href="https://www.facebook.com/aitue.net" target="_blank"><i class="fa fa-facebook"></i></a></li>
+				<li><a href="https://www.instagram.com/aituecomunica/" target="_blank"><i
+							class="fa fa-instagram"></i></a></li>
+
+				<li><a href="https://www.linkedin.com/company/aitue/?lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3BBlgDSkG7SFqn1Zf1oLqvPg%3D%3D"
+						target="_blank"><i class="fa fa-linkedin-square"></i></a></li>
+			</ul>
+		</div>
+		<div class="footer-bottom">
+			<p>&copy;2023 Aitue.net</p>
+		</div>
+	</footer>
+	</div>
+
+	<!-- =========================
+     SCRIPTS   
+============================== -->
+<script src="js/particles.min.js"></script>
+<script src="js/app.js"></script>
+<script src="js/slider.js"></script>
+<script src="/js/menu.js"></script>
+<script src="js/carousel.js"></script>
+<script src="js/custom.js"></script>
+<script src="js/marcas.js"></script>
+<script src="js/animacion.js"></script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+	<script>
+		particlesJS(
+			{
+				"particles": {
+					"number": {
+						"value": 90,
+						"density": {
+							"enable": true,
+							"value_area": 800
+						}
+					},
+					"color": {
+						"value": "#ffffff"
+					},
+					"shape": {
+						"type": "circle",
+						"stroke": {
+							"width": 0,
+							"color": "#000000"
+						},
+						"polygon": {
+							"nb_sides": 5
+						},
+						"image": {
+							"src": "img/github.svg",
+							"width": 100,
+							"height": 100
+						}
+					},
+					"opacity": {
+						"value": 0.5,
+						"random": false,
+						"anim": {
+							"enable": false,
+							"speed": 1,
+							"opacity_min": 0.1,
+							"sync": false
+						}
+					},
+					"size": {
+						"value": 5,
+						"random": true,
+						"anim": {
+							"enable": false,
+							"speed": 40,
+							"size_min": 0.1,
+							"sync": false
+						}
+					},
+					"line_linked": {
+						"enable": true,
+						"distance": 150,
+						"color": "#ffffff",
+						"opacity": 0.4,
+						"width": 1
+					},
+					"move": {
+						"enable": true,
+						"speed": 1,
+						"direction": "none",
+						"random": false,
+						"straight": false,
+						"out_mode": "out",
+						"attract": {
+							"enable": false,
+							"rotateX": 600,
+							"rotateY": 1200
+						}
+					}
+				},
+				"interactivity": {
+					"detect_on": "canvas",
+					"events": {
+						"onhover": {
+							"enable": true,
+							"mode": "repulse"
+						},
+						"onclick": {
+							"enable": true,
+							"mode": "push"
+						},
+						"resize": true
+					},
+					"modes": {
+						"grab": {
+							"distance": 400,
+							"line_linked": {
+								"opacity": 1
+							}
+						},
+						"bubble": {
+							"distance": 400,
+							"size": 40,
+							"duration": 2,
+							"opacity": 8,
+							"speed": 3
+						},
+						"repulse": {
+							"distance": 200
+						},
+						"push": {
+							"particles_nb": 4
+						},
+						"remove": {
+							"particles_nb": 2
+						}
+					}
+				},
+				"retina_detect": true,
+				"config_demo": {
+					"hide_card": false,
+					"background_color": "#b61924",
+					"background_image": "",
+					"background_position": "50% 50%",
+					"background_repeat": "no-repeat",
+					"background_size": "cover"
+				}
+			}
+		)
+	</script>
+</body>
+
+</html>
