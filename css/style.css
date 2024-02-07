@@ -77,7 +77,7 @@ body {
     padding: 10px 20px;
     display: flex;
     align-items: center;
-    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.897);
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.527);
     z-index: 1000;
     cursor: pointer;
     text-decoration: none;
@@ -328,7 +328,7 @@ nav.nav .nav__logo {
 .nav__img {
     display: block;
     width: 60px;
-    padding-right: 20px;
+    
 }
 
 
@@ -1616,12 +1616,7 @@ footer {
         display: block;
     }
 
-    .logo {
-        height: 6rem;
-        margin-left: -6px;
-
-    }
-
+    
     .nav__link--menu {
         position: fixed;
         background-color: #000;
@@ -1731,7 +1726,7 @@ footer {
 
     .logo {
         height: 5rem;
-        margin-left: -6px;
+        margin-left: -3px;
 
     }
 
