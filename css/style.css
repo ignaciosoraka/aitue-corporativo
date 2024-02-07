@@ -346,7 +346,7 @@ nav.nav .nav__logo {
     grid-auto-rows: max-content;
     align-content: center;
     margin-left: 100px;
-    padding-top: 100px;
+    padding-top: 50px;
     padding-bottom: 150px;
     text-align: initial;
 }
@@ -1720,7 +1720,7 @@ footer {
 
 
     .hero__title {
-        font-size: 2rem;
+        font-size: 1.5rem;
         
     }
 
@@ -1750,7 +1750,7 @@ footer {
 
 
     .hero__paragraph {
-        font-size: 1.0rem;
+        font-size: 0.9rem;
         padding: 0 30px;
     }
 
