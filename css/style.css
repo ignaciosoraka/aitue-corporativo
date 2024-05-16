@@ -161,7 +161,7 @@ body {
 /*boton flotante de la derecha*/
 
 .carousel-image {
-    max-height: 700px; /* ajusta este valor según sea necesario */
+    max-height: 750px; /* ajusta este valor según sea necesario */
     width: auto; /* asegura que la imagen se ajuste proporcionalmente */
 }
 
@@ -288,6 +288,21 @@ nav.nav .nav__logo {
     margin-bottom: 20px;
     font-size: 20px;
 }
+
+/* Ocultar carrusel para celular en pantallas mayores a 768px */
+@media (min-width: 769px) {
+    .carousel-celular {
+        display: none;
+    }
+}
+
+/* Ocultar carrusel para PC en pantallas de 768px o menos */
+@media (max-width: 768px) {
+    .carousel-pc {
+        display: none;
+    }
+}
+
 
 /* About */
 
