@@ -3,6 +3,17 @@
 
 <head>
 
+	  <!-- Google Tag Manager -->
+	  <script>(function (w, d, s, l, i) {
+		w[l] = w[l] || []; w[l].push({
+			'gtm.start':
+				new Date().getTime(), event: 'gtm.js'
+		}); var f = d.getElementsByTagName(s)[0],
+			j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+				'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+	})(window, document, 'script', 'dataLayer', 'GTM-KVQJHHS');</script>
+<!-- End Google Tag Manager -->
+
 	<title>Aitue - Contacto </title>
 	<meta name="description" content="">
 	<meta name="author" content="">
@@ -37,6 +48,13 @@
 </head>
 
 <body>
+
+	 <!-- Google Tag Manager (noscript) -->
+	 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KVQJHHS" height="0" width="0"
+		style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div id="particles-js"></div>
+
 	<div id="particles-js"></div>
 
 	<!-- =========================
@@ -107,7 +125,7 @@
 								class="fa-brands fa-linkedin" target="_blank"></i></a>
 					</div>
 				</div>
-				<form class="form" action="formulario.php" method="POST" onsubmit="sendFormDataAndRedirect(event)">
+				<form class="form" action="mail2.php" method="POST" onsubmit="sendFormDataAndRedirect(event)">
 					<div class="input-box">
 						<input type="text" name="nombre" placeholder="Nombre y apellido" required>
 						<i class="fa-solid fa-user"></i>
@@ -124,22 +142,7 @@
 					<button type="submit" class="submit">Dirigirme a WhatsApp</button>
 				</form>
 				
-				<script>
-					function sendFormDataAndRedirect(event) {
-						// Evitar que el formulario se envíe de forma predeterminada
-						event.preventDefault();
 				
-						// Obtener el formulario
-						var form = event.target;
-				
-						// Enviar los datos del formulario mediante una petición AJAX o similar
-						// En este caso, simplemente dejaremos que el formulario se envíe de forma normal
-						form.submit();
-				
-						// Redirigir al usuario a WhatsApp
-						window.location.href = 'https://wa.me/5491141640955?text=Quiero%20más%20%20información%20acerca%20de%20sus%20serivicios%20corporativos.';
-					}
-				</script>
 				
 				
 			</div>

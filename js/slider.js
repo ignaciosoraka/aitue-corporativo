@@ -1,7 +1,7 @@
 (function () {
-    const sliders = [...document.querySelectorAll('.testimony__body')];
+    const sliders = [...document.querySelectorAll('.slide')];
     const buttonNext = document.querySelector('#next');
-    const buttonBefore = document.querySelector('#before');
+    const buttonBefore = document.querySelector('#prev');
     let value;
     let intervalId;
 
@@ -47,26 +47,26 @@
     
     const handleGesture = () => {
         if (touchStartX - touchEndX > 20) {
-            // Deslizamiento hacia la izquierda, siguiente testimonio
+            // Deslizamiento hacia la izquierda, siguiente imagen
             changePosition(1);
         } else if (touchEndX - touchStartX > 20) {
-            // Deslizamiento hacia la derecha, testimonio anterior
+            // Deslizamiento hacia la derecha, imagen anterior
             changePosition(-1);
         }
-        // Puedes ajustar el valor (50) según tus necesidades para determinar cuánto debe deslizarse para considerarse un gesto válido.
+        // Puedes ajustar el valor (20) según tus necesidades para determinar cuánto debe deslizarse para considerarse un gesto válido.
     };
     
 
     const changePosition = (add) => {
-        const currentTestimony = document.querySelector('.testimony__body--show').dataset.id;
-        value = Number(currentTestimony);
+        const currentSlide = document.querySelector('.slide--show').dataset.id;
+        value = Number(currentSlide);
         value += add;
 
-        sliders[Number(currentTestimony) - 1].classList.remove('testimony__body--show');
+        sliders[Number(currentSlide) - 1].classList.remove('slide--show');
         if (value === sliders.length + 1 || value === 0) {
             value = value === 0 ? sliders.length : 1;
         }
 
-        sliders[value - 1].classList.add('testimony__body--show');
+        sliders[value - 1].classList.add('slide--show');
     }
 })();
