@@ -21,7 +21,7 @@ h6 {
 }
 
 body {
-    font-family: Sansation_Regular;
+    font-family: Sansation_Regular!important;
     margin: 0;
    
     
@@ -159,11 +159,18 @@ body {
 
 
 /*boton flotante de la derecha*/
-
-.carousel-image {
-    max-height: 750px; /* ajusta este valor según sea necesario */
-    width: auto; /* asegura que la imagen se ajuste proporcionalmente */
+.slide img{
+    height: 100vh;
 }
+
+@media (max-width:786px){
+    .slide img{
+        height: 70vh;
+    }
+}
+
+
+
 
 
 
@@ -182,6 +189,86 @@ body {
     overflow: hidden;
 }
 
+.slides{
+
+    content: "";
+    position: absolute;
+    height: 100vh;
+    top: 50%; /* Centra verticalmente */
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-size: cover;
+    background-position: center; /* Centra horizontalmente */
+    transform: translateY(-50%); /* Corrige la posición verticalmente centrada */
+
+
+}
+
+.slide{
+    position: absolute;
+    height: 100%;
+    opacity: 0;
+    inset: 0;
+    animation: slide-show 12s infinite;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.slide::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Color y opacidad del fondo, ajusta según tus preferencias */
+    z-index: 1; /* Asegura que esté delante de la imagen */
+}
+
+
+.slide-2{
+    animation-delay: 4s;
+}
+
+.slide-3{
+    animation-delay: 8s;
+}
+.slide-4{
+    animation-delay: 12s;
+}
+
+.slide img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: 0;
+     }
+
+
+@keyframes slide-show{
+    0%{
+        opacity: 0;
+
+    }
+    10%{
+        opacity: 1.9;
+
+    }
+    20%,
+    30%{
+        opacity: 1;
+        scale: 1.08;
+
+    }
+    70%{
+        opacity: 0;
+
+
+    }
+}
 
 
 
@@ -206,7 +293,7 @@ body {
 nav.nav {
     width: 100%;
     max-width: 1800px;
-    background-color: #06060696; 
+
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -289,19 +376,6 @@ nav.nav .nav__logo {
     font-size: 20px;
 }
 
-/* Ocultar carrusel para celular en pantallas mayores a 768px */
-@media (min-width: 769px) {
-    .carousel-celular {
-        display: none;
-    }
-}
-
-/* Ocultar carrusel para PC en pantallas de 768px o menos */
-@media (max-width: 768px) {
-    .carousel-pc {
-        display: none;
-    }
-}
 
 
 /* About */
